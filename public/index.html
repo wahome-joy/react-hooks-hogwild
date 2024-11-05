@@ -28,7 +28,24 @@
       console.hog = console.log.bind(console, "🐖🐖🐖");
     </script>
     <title>React App</title>
+    <style>
+      .tile-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 tiles per row */
+            gap: 30px;
+        }
+
+        .tile {
+            background-color: pink;
+            color: brown;
+            padding: 50px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
@@ -42,5 +59,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="tile-container">
+      <div class="tile">Babe</div>
+      <div class="tile">Porkchop</div>
+      <div class="tile">Cherub</div>
+      <div class="tile">Piggy smalls</div>
+      <div class="tile">Trouble</div>        
+      <div class="tile">Piglet</div>
+      <div class="tile">Peppa</div>
+      <div class="tile">Truffle shuffle</div>
+      <div class="tile">Bailey</div>
+      <div class="tile">Glaxy note</div>
+      <div class="tile">Leggo my eggo</div>
+
+
+  </div>
   </body>
 </html>
